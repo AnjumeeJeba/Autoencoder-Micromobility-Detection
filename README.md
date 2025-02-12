@@ -5,12 +5,12 @@
 5: Last Part: performance matrix and confusion matrix
 
 
-#Reconstruction Loss#
+**Reconstruction Loss**
 ° The reconstruction loss is calculated using the Mean Absolute Error (MAE)
                loss = tf.keras.losses.mae(test_data, reconstructed)
 ° Here, test_data is the original input data. reconstructed is the output of the autoencoder after encoding and decoding the input. The MAE computes the absolute difference between each original and reconstructed value, then takes the average.
 
-#Threshold#
+**Threshold**
 ° The threshold is set based on the training reconstruction loss:
                 threshold = np.mean(train_loss) + np.std(train_loss)
 °train_loss is the reconstruction loss computed for normal (Oscillation) training data. The threshold is set as the mean reconstruction loss plus one standard deviation. Any test sample with a reconstruction loss above this threshold is classified as an anomaly(Non-Oscillation).
