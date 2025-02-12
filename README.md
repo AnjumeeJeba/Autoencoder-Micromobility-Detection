@@ -2,7 +2,7 @@
 2. Data Visualization: Uses Matplotlib, Seaborn, and Plotly for visualizing dataset distributions and sample plots.
 3. Autoencoder Model:  with an encoder (compressing the input) and a decoder (reconstructing the input). Trained using Mean Squared Error (MSE) loss to minimize reconstruction errors. 
 4. Anomaly Detection Part: The autoencoder is trained only on normal data(Oscillation). The reconstruction loss is calculated for both normal(Oscillation) and anomalous(Other) data. If the reconstruction loss exceeds the computed threshold, the instance is classified as anomalous.
-5: Last Part: performance matrix and confusion matrix
+5. Last Part: performance matrix and confusion matrix
 
 
 **Reconstruction Loss**
